@@ -1,6 +1,4 @@
-package org.example.consumer;
-
-import org.example.Main;
+package org.example.multithread;
 
 import java.util.logging.Logger;
 

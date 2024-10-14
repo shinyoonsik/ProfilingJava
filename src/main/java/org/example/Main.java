@@ -1,7 +1,7 @@
 package org.example;
 
-import org.example.consumer.Consumer;
-import org.example.producer.Producer;
+import org.example.deadlock.Consumer;
+import org.example.deadlock.Producer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,11 +14,7 @@ public class Main {
 
     public static void main(String[] args) throws InterruptedException {
 //        SpringApplication.run(Main.class, args);
-
-        Thread.sleep(1000);
-
-        new Producer("_Producer").start();
         new Consumer("_Consumer").start();
+        new Producer("_Producer").start();
     }
-
 }
