@@ -4,7 +4,7 @@ import java.util.logging.Logger;
 
 public class Consumer extends Thread{
 
-    private final Logger log = Logger.getLogger(Consumer.currentThread().getName());
+    private final Logger log = Logger.getLogger(Consumer.class.getName());
 
     public Consumer(String name){
         super(name);
